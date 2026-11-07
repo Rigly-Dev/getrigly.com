@@ -93,6 +93,9 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
 .final-cta h2 { color: var(--white); margin: 0 auto 14px; }
 .final-cta p { margin: 0 0 30px; }
 .final-cta .button { background: var(--mint); border-color: var(--mint); color: var(--ink); }
+.final-cta .button:hover { background: #5be6a9; }
+.final-cta .button.ghost { background: transparent; color: var(--paper); border-color: #3a4450; }
+.final-cta .button.ghost:hover { background: var(--ink-2); }
 
 /* Docs */
 .docs { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 230px minmax(0, 1fr) 200px; gap: 48px; }
