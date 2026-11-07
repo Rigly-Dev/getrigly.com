@@ -145,6 +145,7 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
 /* Home: screenshot tour */
 .tour { padding: 32px 0 64px; }
 .tour-row { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px; align-items: center; padding: 40px 0; }
+.tour-row.flip { grid-template-columns: 1.2fr 0.8fr; }
 .tour-row.flip > div { order: 2; }
 .tour-row h2 { font-size: clamp(26px, 3vw, 34px); margin: 0 0 14px; }
 .tour-row p { color: var(--muted); margin: 0 0 16px; }
@@ -162,6 +163,7 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
 }
 @media (max-width: 900px) {
   .split, .tour-row { grid-template-columns: 1fr; }
+  .tour-row.flip { grid-template-columns: 1fr; }
   .tour-row.flip > div { order: 0; }
   .grid, .grid.three { grid-template-columns: 1fr 1fr; }
   .docs { grid-template-columns: 1fr; gap: 0; }
