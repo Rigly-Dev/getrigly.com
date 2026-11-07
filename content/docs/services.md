@@ -13,7 +13,7 @@ Rigly can run the databases and search engines your projects need. Each runs as 
 | MySQL | 9.7, 8.4, 8.0 | 3306 | User `root`, no password. Oracle's official build. |
 | PostgreSQL | 18, 17, 16, 15, 14 | 5432 | |
 | MariaDB | 12.3, 11.8, 11.4, 10.11 | 3306 | User `root`, no password. |
-| Redis | 8 | 6379 | No password. Built on your Mac, which needs the Xcode Command Line Tools. |
+| Redis | 8 | 6379 | No password. Without the optional modules (RedisJSON, RediSearch and others). |
 | MongoDB | 8.0, 7.0 | 27017 | |
 | Meilisearch | 1 | 7700 | |
 | Typesense | 30 | 8108 | |
