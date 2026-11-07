@@ -31,7 +31,7 @@ The menu bar app and the `rigly` command share the same settings, so you can use
 ## Requirements
 
 - macOS 15 Sequoia or later
-- A Mac with Apple silicon (M1 or later)
+- A Mac with Apple silicon or an Intel processor
 - About 200 MB of disk space for the basics, plus whatever PHP versions and services you add
 
 ## Quick start
