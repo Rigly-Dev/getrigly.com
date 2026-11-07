@@ -50,4 +50,4 @@ Rigly keeps nearly everything in one folder, but setup also changes a few system
    defaults delete dev.rigly.app
    ```
 
-5. Remove the PATH line from `~/.zshrc`, and drag Rigly from Applications to the Bin.
+5. Remove Rigly's PATH line from `~/.zshrc` (or `~/.bash_profile`, or delete `~/.config/fish/conf.d/rigly.fish`), and drag Rigly from Applications to the Bin.

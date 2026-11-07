@@ -49,7 +49,7 @@ php -v                      # PHP 7.4
 php artisan migrate
 ```
 
-This needs Rigly's `bin` folder on your PATH. See [Installation](/docs/installation/#put-rigly-on-your-path).
+This needs Rigly's `bin` folder on your PATH. See [Installation](/docs/installation/#the-rigly-command-in-terminal).
 
 ## php.ini settings
 

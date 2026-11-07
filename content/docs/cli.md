@@ -4,7 +4,7 @@ description: Every rigly command.
 ---
 Everything in the app is also a `rigly` command, and both share the same settings. Commands that act on a site use the site for the current folder unless you name one. Run `rigly help <command>` for every option.
 
-To use `rigly` in Terminal, put Rigly's `bin` folder on your PATH. See [Installation](/docs/installation/#put-rigly-on-your-path).
+To use `rigly` in Terminal, put Rigly's `bin` folder on your PATH. See [Installation](/docs/installation/#the-rigly-command-in-terminal).
 
 ## Setup and the service
 

@@ -20,7 +20,7 @@ Click **Install**. Rigly then:
    - a resolver file, so macOS asks Rigly about `.test` addresses;
    - forwarding of ports 80 and 443 to Rigly's web server, so sites work without port numbers.
    The helper is what lets Rigly change these later, from Settings, without asking again.
-2. **Downloads Caddy and PHP 8.4** (about 80 MB) into `~/Library/Application Support/Rigly`.
+2. **Downloads Caddy and PHP 8.4** (about 80 MB) into `~/Library/Application Support/Rigly`, and adds Rigly's commands to your PATH.
 3. **Starts its background service**, and waits until everything is up before showing the main window.
 
 If you click **Don't Allow**, nothing is changed and you're back at the Install button.
@@ -39,19 +39,17 @@ If you already have something serving local sites, Rigly uses **`.rig` on `127.0
 
 The choice is made once, on first install, and kept. Throughout these docs, `.test` means whichever domain your Rigly uses. To choose your own from the command line, see [`rigly setup`](/docs/cli/#setup-and-the-service).
 
-## Put rigly on your PATH
+## The rigly command in Terminal
 
-The `rigly` command, and the `php`, `composer`, `node` and other commands for your sites, live in `~/Library/Application Support/Rigly/bin`. To use them in Terminal, open **Settings** in Rigly and click **Add to ~/.zshrc**, or add this line yourself:
+Setup also puts Rigly's commands on your PATH, so you can use them in Terminal: `rigly`, and the `php`, `composer`, `node`, `npm` and other commands that use each site's versions. Rigly adds one line to your shell's startup file: `~/.zshrc` for zsh (macOS's default), `~/.bash_profile` for bash, or `~/.config/fish/conf.d/rigly.fish` for fish.
 
-```sh
-export PATH="$HOME/Library/Application Support/Rigly/bin:$PATH"
-```
-
-Open a new Terminal window, then check it works:
+Open a new Terminal window after installing, then check it works:
 
 ```sh
 rigly status
 ```
+
+If you'd rather add it yourself, **Settings** shows the line to use.
 
 ## Start at login
 
