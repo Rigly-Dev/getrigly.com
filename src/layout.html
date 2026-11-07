@@ -33,6 +33,10 @@
   <main>
 {{body}}
   </main>
+  <script>
+    // On narrow screens the docs menu starts closed, so the page itself comes first.
+    if (matchMedia('(max-width: 900px)').matches) document.querySelector('.docs-nav details')?.removeAttribute('open');
+  </script>
   <footer class="site-footer">
     <div class="wrap">
       <img src="/brand/wordmark-dark.png" srcset="/brand/wordmark-dark@2x.png 2x, /brand/wordmark-dark@3x.png 3x" width="68" height="28" alt="Rigly">

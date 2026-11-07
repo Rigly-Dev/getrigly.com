@@ -2,7 +2,7 @@
 title: Databases
 description: Create, list and drop databases on Rigly's MySQL, MariaDB and PostgreSQL.
 ---
-Rigly manages databases on its MySQL, MariaDB and PostgreSQL services, from the app's Services page or the command line.
+Rigly manages databases on its MySQL, MariaDB and PostgreSQL services. In the app, each of these services' cards on the **Services** page lists its databases, with a box to create one.
 
 ## Create and drop databases
 

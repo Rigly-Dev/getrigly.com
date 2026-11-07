@@ -4,6 +4,8 @@ description: Run MySQL, PostgreSQL, MariaDB, Redis, MongoDB, Meilisearch, Typese
 ---
 Rigly can run the databases and search engines your projects need. Each runs as its own service, on its own port, and only accepts connections from your Mac.
 
+![The Services page: MySQL, Meilisearch, Typesense and MongoDB running, each with its address and actions](/screens/services.png)
+
 ## Available services
 
 | Service | Versions | Port | Notes |
@@ -19,7 +21,7 @@ Rigly can run the databases and search engines your projects need. Each runs as 
 
 ## Add a service
 
-The **Services** page in the app lists everything, with an **Add** button for each. From the command line:
+On the **Services** page, click **Add service** and choose one. Each service then has a card with its address and login, a switch to start and stop it, its logs and settings folder, and **Copy Laravel .env** or **Open in TablePlus**. From the command line:
 
 ```sh
 rigly service:add mysql

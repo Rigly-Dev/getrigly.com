@@ -4,9 +4,11 @@ description: Install PHP versions, choose a default, pin sites to a version, cha
 ---
 Rigly installs its own builds of PHP 7.4, 8.0, 8.1, 8.2, 8.3, 8.4 and 8.5, side by side. They come with the extensions Laravel, WordPress, Symfony and most other PHP apps need, and don't touch any other PHP on your Mac.
 
+![The PHP page: the default version, Xdebug, PCOV and SPX, and php.ini settings](/screens/php.png)
+
 ## Install and update versions
 
-The **PHP** page in the app lists every version, with buttons to install, update and remove them. From the command line:
+The **PHP** page in the app shows your versions; **Install version** adds another, and each version's menu updates or removes it. From the command line:
 
 ```sh
 rigly php:list              # installed versions, and which is the default

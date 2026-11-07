@@ -4,6 +4,8 @@ description: Park folders, link projects, proxy local servers, add aliases and c
 ---
 A site is a project Rigly serves at its own address. Rigly works out how to serve each one: Laravel, WordPress, Symfony, Craft, plain PHP or static HTML.
 
+![The Sites page: each site with its PHP and Node versions, and the selected site's settings](/screens/sites.png)
+
 ## Park a folder
 
 Parking a folder serves every folder inside it, by name. Park `~/Code`, and `~/Code/shop` is served at `shop.test`, `~/Code/blog` at `blog.test`, and any project you add later is served the moment it appears.

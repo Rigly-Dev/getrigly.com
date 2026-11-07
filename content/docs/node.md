@@ -4,9 +4,11 @@ description: Node versions through nvm, a default version, per-site versions and
 ---
 Rigly installs Node through [nvm](https://github.com/nvm-sh/nvm) and runs the right version for each project, so `npm run dev` just works.
 
+![The Node page: the default version, how each project picks a version, and the bundled developer tools](/screens/node.png)
+
 ## Versions
 
-Rigly installs the current Node LTS during setup. The **Node** page in the app lists versions and installs others. From the command line:
+Rigly installs the current Node LTS during setup. The **Node** page in the app lists your versions; **Install version** adds another. From the command line:
 
 ```sh
 rigly node:list
