@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="https://getrigly.com/brand/rigly-icon-1024.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0E1218">
+  <link rel="icon" href="/brand/rigly-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/brand/rigly-icon-1024.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="{{bodyClass}}">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Rigly home">
+        <img class="on-light" src="/brand/wordmark-light.png" srcset="/brand/wordmark-light@2x.png 2x, /brand/wordmark-light@3x.png 3x" width="68" height="28" alt="Rigly">
+        <img class="on-dark" src="/brand/wordmark-dark.png" srcset="/brand/wordmark-dark@2x.png 2x, /brand/wordmark-dark@3x.png 3x" width="68" height="28" alt="Rigly">
+      </a>
+      <nav class="site-nav">
+        <a href="/#features">Features</a>
+        <a href="/docs/">Docs</a>
+        <a class="button small" href="{{download}}">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+{{body}}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="/brand/wordmark-dark.png" srcset="/brand/wordmark-dark@2x.png 2x, /brand/wordmark-dark@3x.png 3x" width="68" height="28" alt="Rigly">
+      <nav>
+        <a href="/docs/">Documentation</a>
+        <a href="/docs/installation/">Install</a>
+        <a href="/docs/cli/">CLI reference</a>
+        <a href="/docs/troubleshooting/">Troubleshooting</a>
+        <a href="https://github.com/Rigly-Dev/rigly-releases/releases">Release notes</a>
+      </nav>
+      <p>© {{year}} Bowyer Digital. Laravel is a trademark of Taylor Otwell; Herd and Valet belong to their makers. Rigly isn't affiliated with them.</p>
+    </div>
+  </footer>
+</body>
+</html>

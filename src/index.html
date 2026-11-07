@@ -1,0 +1,147 @@
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Local PHP development for the Mac</p>
+          <h1>Every PHP site on your Mac, <span>ready in seconds.</span></h1>
+          <p class="lede">Rigly is a native menu bar app that serves your projects at <code>name.test</code> with Caddy,
+            every PHP version from 7.4 to 8.5, Node, databases, a mail catcher, dumps and public sharing. No Docker,
+            no Homebrew, no config files.</p>
+          <div class="cta">
+            <a class="button" href="{{download}}">Download for macOS</a>
+            <a class="button ghost" href="/docs/">Read the docs</a>
+          </div>
+          <p class="fine">macOS 15 Sequoia or later · Apple silicon · Signed and notarized by Apple · Updates itself</p>
+        </div>
+        <div class="window" aria-hidden="true">
+          <div class="window-sidebar">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <img src="/brand/wordmark-dark.png" srcset="/brand/wordmark-dark@2x.png 2x, /brand/wordmark-dark@3x.png 3x" width="68" height="28" alt="">
+            <ul>
+              <li class="on">Sites <b>6</b></li>
+              <li>PHP <b>8.4</b></li>
+              <li>Node <b>24</b></li>
+              <li>Services</li>
+              <li class="label">Tools</li>
+              <li>Mail</li>
+              <li>Insights</li>
+              <li>Requests</li>
+              <li>Settings</li>
+            </ul>
+            <div class="status"><span></span>Running · 6 sites on .test</div>
+          </div>
+          <div class="window-main">
+            <p class="window-title">Sites</p>
+            <div class="site"><span class="fav">★</span><strong>shop.test</strong><em>PHP 8.4</em><em class="lock">HTTPS</em></div>
+            <div class="site"><span class="fav">★</span><strong>api.test</strong><em>PHP 8.3</em><em class="lock">HTTPS</em></div>
+            <div class="site"><span></span><strong>blog.test</strong><em>PHP 8.4</em></div>
+            <div class="site"><span></span><strong>legacy.test</strong><em>PHP 7.4</em></div>
+            <div class="site"><span></span><strong>vite.test</strong><em>→ :5173</em></div>
+            <div class="site shared"><span></span><strong>shop-k2x9.tunnelpad.dev</strong><em>Shared</em></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="wrap">
+        <h2>Everything a PHP project needs, nothing it doesn't.</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Sites without setup</h3>
+            <p>Park a folder and every project in it is served at <code>folder.test</code>. Link single projects, proxy
+              Vite or Node servers, add aliases and turn on HTTPS with one switch.</p>
+          </div>
+          <div class="card">
+            <h3>Every PHP version</h3>
+            <p>PHP 7.4 to 8.5, side by side. Pick a default, pin a site to its own version, change php.ini settings
+              for all of them, and switch Xdebug, PCOV and SPX on when you need them.</p>
+          </div>
+          <div class="card">
+            <h3>Databases and services</h3>
+            <p>MySQL, PostgreSQL, MariaDB, Redis, MongoDB, Meilisearch, Typesense and MinIO, one click each. Run
+              several versions at once, each on its own port.</p>
+          </div>
+          <div class="card">
+            <h3>Mail and dumps</h3>
+            <p>Every email your apps send is caught and shown, per project. <code>dump()</code> and <code>dd()</code>
+              go to a viewer instead of breaking the page, alongside queries, jobs, views, HTTP calls and logs.</p>
+          </div>
+          <div class="card">
+            <h3>Share with anyone</h3>
+            <p>Give a client or a webhook a public HTTPS address for any site through TunnelPad, and inspect and
+              replay every request it receives.</p>
+          </div>
+          <div class="card">
+            <h3>Workspaces</h3>
+            <p>Work on a branch at its own address: Rigly makes a second copy of a site on a new git branch, with
+              its own database cloned from the original.</p>
+          </div>
+          <div class="card">
+            <h3>New projects in one step</h3>
+            <p>Create a Laravel app with a starter kit, or a WordPress site with its database, and it's served the
+              moment it's ready.</p>
+          </div>
+          <div class="card">
+            <h3>A real command line</h3>
+            <p>Everything in the app is also a <code>rigly</code> command, and <code>rigly.yml</code> lets a teammate
+              get the same PHP, Node, services and domains with <code>rigly init</code>.</p>
+          </div>
+          <div class="card">
+            <h3>Plays well with others</h3>
+            <p>Already using Laravel Herd or Valet? Rigly notices and runs alongside on <code>.rig</code>, so you can
+              try it without changing anything.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <div class="wrap split">
+        <div>
+          <h2>Or drive it from the terminal.</h2>
+          <p>The app and the <code>rigly</code> command share the same settings, so use whichever is closer to hand.</p>
+          <a href="/docs/cli/">See every command →</a>
+        </div>
+        <pre class="terminal"><code><span class="p">~/Code</span> $ rigly park
+✓ Parked /Users/you/Code. Its folders are served as &lt;folder&gt;.test
+<span class="p">~/Code/shop</span> $ rigly secure
+✓ https://shop.test
+<span class="p">~/Code/shop</span> $ rigly isolate 8.3
+✓ shop now uses PHP 8.3.
+<span class="p">~/Code/shop</span> $ rigly service:add mysql
+✓ MySQL 8.4 (mysql) on 127.0.0.1:3306, user root · no password.
+<span class="p">~/Code/shop</span> $ rigly share
+✓ shop is shared at https://shop-k2x9.tunnelpad.dev</code></pre>
+      </div>
+    </section>
+
+    <section class="native">
+      <div class="wrap">
+        <h2>Native, small and quiet.</h2>
+        <div class="grid three">
+          <div>
+            <h3>Built for macOS</h3>
+            <p>A Swift app that lives in your menu bar. No Electron, no virtual machine, no containers.</p>
+          </div>
+          <div>
+            <h3>Self-contained</h3>
+            <p>Everything goes in one folder in your Library. Rigly doesn't touch Homebrew or your system PHP.</p>
+          </div>
+          <div>
+            <h3>One password prompt</h3>
+            <p>Setup asks once, to route <code>.test</code> to your Mac. Trusting the HTTPS certificate waits until you use HTTPS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap">
+        <h2>Start serving your sites.</h2>
+        <p>Download Rigly, drag it to Applications and click Install. Your first site is a minute away.</p>
+        <div class="cta center">
+          <a class="button" href="{{download}}">Download for macOS</a>
+          <a class="button ghost light" href="/docs/installation/">Installation guide</a>
+        </div>
+      </div>
+    </section>
