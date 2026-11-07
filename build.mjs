@@ -10,7 +10,7 @@ const DOWNLOAD = 'https://github.com/Rigly-Dev/rigly-releases/releases/latest/do
 
 // The docs sidebar, in order. Each slug is content/docs/<slug>.md.
 const NAV = [
-  ['Getting started', ['index', 'installation', 'updates-and-uninstalling']],
+  ['Getting started', ['index', 'installation', 'updates-and-uninstalling', 'beta']],
   ['Sites', ['sites', 'https', 'new-sites', 'project-file']],
   ['Runtimes', ['php', 'node']],
   ['Services', ['services', 'databases']],

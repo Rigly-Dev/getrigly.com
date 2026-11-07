@@ -42,6 +42,9 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
   -webkit-backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .brand { display: flex; }
+.site-header .wrap > .beta { margin-right: auto; margin-left: 10px; font-size: 11px; font-weight: 800; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink); background: var(--mint); padding: 3px 8px; border-radius: 999px; }
+.site-header .wrap > .beta:hover { text-decoration: none; background: #5be6a9; }
 .brand .on-dark { display: none; }
 .site-nav { display: flex; align-items: center; gap: 24px; font-size: 15px; font-weight: 500; }
 .site-nav a:not(.button) { color: var(--text); }
@@ -92,6 +95,7 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
 .final-cta { background: var(--ink); color: #c3cbd4; text-align: center; padding: 96px 0; border-top: 1px solid #1f2730; }
 .final-cta h2 { color: var(--white); margin: 0 auto 14px; }
 .final-cta p { margin: 0 0 30px; }
+.final-cta p a { color: var(--mint); }
 .final-cta .button { background: var(--mint); border-color: var(--mint); color: var(--ink); }
 .final-cta .button:hover { background: #5be6a9; }
 .final-cta .button.ghost { background: transparent; color: var(--paper); border-color: #3a4450; }
