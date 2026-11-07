@@ -16,7 +16,7 @@ Rigly is in public beta. It's ready for everyday use, and we use it ourselves, b
 
 Bug reports, ideas and questions all go to [Rigly's issue tracker on GitHub](https://github.com/Rigly-Dev/rigly-releases/issues). You need a free GitHub account to post.
 
-The quickest way is from Rigly itself: choose **Send Feedback (Beta)** in Rigly's menu bar menu, or click the **Beta** badge in Rigly's window. Rigly opens the form with your Rigly and macOS versions already filled in.
+The quickest way is from Rigly itself: choose **Help › Report a Bug…** (or Suggest a Feature, or Ask a Question) while Rigly's window is open, **Send Feedback (Beta)** in the menu under Rigly's menu bar icon, or click the **Beta** badge in Rigly's window. Rigly opens the form with your Rigly and macOS versions already filled in.
 
 - [Report a bug](https://github.com/Rigly-Dev/rigly-releases/issues/new?template=bug.yml)
 - [Suggest a feature](https://github.com/Rigly-Dev/rigly-releases/issues/new?template=feature.yml)
