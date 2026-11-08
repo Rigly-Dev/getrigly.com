@@ -7,10 +7,12 @@ import { dirname, join } from 'node:path';
 
 const SITE = 'https://getrigly.com';
 const DOWNLOAD = 'https://github.com/Rigly-Dev/rigly-mac/releases/latest/download/Rigly.dmg';
+// The Windows installer, from the latest release in Rigly-Dev/rigly-windows (published by Rigly-Apps' windows-release workflow).
+const DOWNLOAD_WINDOWS = 'https://github.com/Rigly-Dev/rigly-windows/releases/latest/download/RiglyApp-win-Setup.exe';
 
 // The docs sidebar, in order. Each slug is content/docs/<slug>.md.
 const NAV = [
-  ['Getting started', ['index', 'installation', 'updates-and-uninstalling', 'beta']],
+  ['Getting started', ['index', 'installation', 'windows', 'updates-and-uninstalling', 'beta']],
   ['Sites', ['sites', 'https', 'new-sites', 'project-file']],
   ['Runtimes', ['php', 'node']],
   ['Services', ['services', 'databases']],
@@ -36,12 +38,13 @@ function write(path, html) {
 
 function page({ title, description, body, path, bodyClass = '' }) {
   return fill(layout, {
-    title: title === 'Rigly' ? 'Rigly: local PHP development for the Mac' : `${title} · Rigly`,
+    title: title === 'Rigly' ? 'Rigly: local PHP development for Mac and Windows' : `${title} · Rigly`,
     description: escape(description),
     canonical: `${SITE}${path}`,
     body,
     bodyClass,
     download: DOWNLOAD,
+    downloadWindows: DOWNLOAD_WINDOWS,
     year: String(new Date().getFullYear()),
   });
 }
@@ -81,7 +84,7 @@ for (const [, slugs] of NAV) {
     const { meta, markdown } = parse(readFileSync(file, 'utf8'));
     if (!meta.title) throw new Error(`${file} has no title`);
     toc = [];
-    const html = marked.parse(markdown.replaceAll('{{download}}', DOWNLOAD));
+    const html = marked.parse(markdown.replaceAll('{{download}}', DOWNLOAD).replaceAll('{{downloadWindows}}', DOWNLOAD_WINDOWS));
     docs[slug] = { ...meta, slug, html, toc };
   }
 }
@@ -125,8 +128,8 @@ for (const slug of order) {
 
 write('index.html', page({
   title: 'Rigly',
-  description: 'Rigly is a fast, native local PHP development environment for macOS: Caddy, every PHP version, Node, databases, mail, dumps and public sharing, from your menu bar.',
-  body: fill(readFileSync('src/index.html', 'utf8'), { download: DOWNLOAD }),
+  description: 'Rigly is a fast, native local PHP development environment for Mac and Windows: Caddy, every PHP version, Node, databases, mail, dumps and public sharing, from your menu bar or system tray.',
+  body: fill(readFileSync('src/index.html', 'utf8'), { download: DOWNLOAD, downloadWindows: DOWNLOAD_WINDOWS }),
   path: '/',
   bodyClass: 'home',
 }));

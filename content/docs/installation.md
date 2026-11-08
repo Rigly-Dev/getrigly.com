@@ -4,6 +4,8 @@ description: Download and install Rigly, what first-time setup does, and running
 ---
 Rigly comes as a disk image signed and notarized by Apple. Installing takes a minute or two, most of it downloading PHP.
 
+This page covers the Mac. On Windows, see [Rigly for Windows](/docs/windows/).
+
 ## Install the app
 
 1. [Download Rigly]({{download}}).

@@ -15,6 +15,17 @@
   <link rel="icon" href="/brand/rigly-icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/brand/rigly-icon-1024.png">
   <link rel="stylesheet" href="/style.css">
+  <script>
+    // Which download to offer: adds os-mac or os-windows to <html> before the page draws. Anything else (Linux,
+    // phones, iPads, no JavaScript) shows both downloads.
+    (function () {
+      var platform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
+      var ua = navigator.userAgent;
+      var os = /Win/i.test(platform) || /Windows NT/.test(ua) ? 'windows'
+        : (/Mac/i.test(platform) || /Macintosh/.test(ua)) && navigator.maxTouchPoints < 2 ? 'mac' : '';
+      if (os) document.documentElement.classList.add('os-' + os);
+    })();
+  </script>
 </head>
 <body class="{{bodyClass}}">
   <header class="site-header">
@@ -28,7 +39,9 @@
         <a href="/#features">Features</a>
         <a href="/docs/">Docs</a>
         <a href="/docs/beta/">Feedback</a>
-        <a class="button small" href="{{download}}">Download</a>
+        <a class="button small only-mac" href="{{download}}">Download</a>
+        <a class="button small only-windows" href="{{downloadWindows}}">Download</a>
+        <a class="button small not-detected" href="/#download">Download</a>
       </nav>
     </div>
   </header>
@@ -48,8 +61,9 @@
         <a href="/docs/cli/">CLI reference</a>
         <a href="/docs/troubleshooting/">Troubleshooting</a>
         <a href="/docs/beta/">Beta &amp; feedback</a>
-        <a href="https://github.com/Rigly-Dev/rigly-mac/issues/new/choose">Report a bug</a>
-        <a href="https://github.com/Rigly-Dev/rigly-mac/releases">Release notes</a>
+        <a href="/docs/beta/#send-feedback">Report a bug</a>
+        <a href="https://github.com/Rigly-Dev/rigly-mac/releases">Mac release notes</a>
+        <a href="https://github.com/Rigly-Dev/rigly-windows/releases">Windows release notes</a>
       </nav>
       <p>© {{year}} Bowyer Digital. Laravel is a trademark of Taylor Otwell; Herd and Valet belong to their makers. Rigly isn't affiliated with them.</p>
     </div>

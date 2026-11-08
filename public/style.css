@@ -186,3 +186,8 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
 
 /* Docs pages are wider than the home page; keep the header in line with them. */
 .docs-page .site-header .wrap { max-width: 1280px; }
+
+/* Downloads for the visitor's system (layout.html adds os-mac or os-windows to <html>); both when it's neither. */
+html.os-mac .only-windows, html.os-mac .not-detected,
+html.os-windows .only-mac, html.os-windows .not-detected,
+html:not(.os-mac):not(.os-windows) .only-mac, html:not(.os-mac):not(.os-windows) .only-windows { display: none !important; }

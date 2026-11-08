@@ -1,16 +1,24 @@
-    <section class="hero">
+    <section class="hero" id="download">
       <div class="wrap">
         <div class="hero-copy">
-          <p class="eyebrow">Now in public beta · Local PHP development for the Mac</p>
-          <h1>Every PHP site on your Mac, <span>ready in seconds.</span></h1>
-          <p class="lede">Rigly is a native menu bar app that serves your projects at <code>name.test</code> with Caddy,
-            every PHP version from 7.4 to 8.5, Node, databases, a mail catcher, dumps and public sharing. No Docker,
-            no Homebrew, no config files.</p>
+          <p class="eyebrow">Now in public beta · Local PHP development for Mac and Windows</p>
+          <h1>Every PHP site on your computer, <span>ready in seconds.</span></h1>
+          <p class="lede">Rigly is a native app for your Mac's menu bar or your PC's system tray that serves your projects
+            at <code>name.test</code> with Caddy, every PHP version from 7.4 to 8.5, Node, databases, a mail catcher,
+            dumps and public sharing. No Docker, no virtual machines, no config files.</p>
           <div class="cta">
-            <a class="button" href="{{download}}">Download for macOS</a>
+            <a class="button only-mac" href="{{download}}">Download for macOS</a>
+            <a class="button only-windows" href="{{downloadWindows}}">Download for Windows (beta)</a>
+            <a class="button not-detected" href="{{download}}">Download for macOS</a>
+            <a class="button not-detected" href="{{downloadWindows}}">Download for Windows (beta)</a>
             <a class="button ghost" href="/docs/">Read the docs</a>
           </div>
-          <p class="fine">macOS 15 Sequoia or later · Apple silicon and Intel · Signed and notarized by Apple · Updates itself</p>
+          <p class="fine only-mac">macOS 15 Sequoia or later · Apple silicon and Intel · Signed and notarized by Apple ·
+            Updates itself · Also <a href="/docs/windows/">for Windows</a></p>
+          <p class="fine only-windows">Windows 10 or 11, 64-bit · Updates itself · Not code-signed yet, so Windows may
+            warn you first: <a href="/docs/windows/#install-the-app">how to install</a> · Also <a href="{{download}}">for macOS</a></p>
+          <p class="fine not-detected">Mac: macOS 15 Sequoia or later, Apple silicon and Intel · Windows (beta): Windows 10
+            or 11, 64-bit · Both update themselves</p>
         </div>
         <img class="hero-shot" src="/screens/sites.png" width="1324" height="812"
           alt="Rigly's Sites page: a list of local sites with their PHP and Node versions, and the selected site's settings.">
@@ -29,12 +37,12 @@
           <div class="card">
             <h3>Every PHP version</h3>
             <p>PHP 7.4 to 8.5, side by side. Pick a default, pin a site to its own version, change php.ini settings
-              for all of them, and switch Xdebug, PCOV and SPX on when you need them.</p>
+              for all of them, and switch Xdebug and PCOV (and SPX on the Mac) on when you need them.</p>
           </div>
           <div class="card">
             <h3>Databases and services</h3>
-            <p>MySQL, PostgreSQL, MariaDB, Redis, MongoDB, Meilisearch, Typesense and MinIO, one click each. Run
-              several versions at once, each on its own port.</p>
+            <p>MySQL, PostgreSQL, MariaDB, Redis, MongoDB, Meilisearch, MinIO and, on the Mac, Typesense, one click
+              each. Run several versions at once, each on its own port.</p>
           </div>
           <div class="card">
             <h3>Mail and dumps</h3>
@@ -87,7 +95,7 @@
             <p class="eyebrow">Services</p>
             <h2>Databases in a click, side by side.</h2>
             <p>MySQL, PostgreSQL, MariaDB, Redis, MongoDB, Meilisearch, Typesense and MinIO. Each gets its own port,
-              so several versions run at once, next to anything else on your Mac. Create databases and copy the
+              so several versions run at once, next to anything else on your computer. Create databases and copy the
               <code>.env</code> settings right from the card.</p>
             <a href="/docs/services/">Services in Rigly →</a>
           </div>
@@ -131,16 +139,19 @@
         <h2>Native, small and quiet.</h2>
         <div class="grid three">
           <div>
-            <h3>Built for macOS</h3>
-            <p>A Swift app that lives in your menu bar. No Electron, no virtual machine, no containers.</p>
+            <h3>Native on Mac and Windows</h3>
+            <p>A Swift app in your Mac's menu bar, and a WinUI app in your PC's system tray. No Electron, no virtual
+              machine, no containers.</p>
           </div>
           <div>
             <h3>Self-contained</h3>
-            <p>Everything goes in one folder in your Library. Rigly doesn't touch Homebrew or your system PHP.</p>
+            <p>Everything goes in one folder: in your Library on a Mac, in AppData on Windows. Rigly doesn't touch
+              Homebrew, your system PHP or other tools.</p>
           </div>
           <div>
-            <h3>One password prompt</h3>
-            <p>Setup asks once, to route <code>.test</code> to your Mac. Trusting the HTTPS certificate waits until you use HTTPS.</p>
+            <h3>One permission prompt</h3>
+            <p>Setup asks once, for your Mac's password or Windows' administrator approval, to route <code>.test</code>
+              to your computer. Trusting the HTTPS certificate waits until you use HTTPS.</p>
           </div>
         </div>
       </div>
@@ -149,11 +160,16 @@
     <section class="final-cta">
       <div class="wrap">
         <h2>Start serving your sites.</h2>
-        <p>Download Rigly, drag it to Applications and click Install. Your first site is a minute away.<br>
+        <p>Download Rigly, open it and set it up. Your first site is a minute away.<br>
           Rigly is in beta: <a href="/docs/beta/">tell us</a> what works, what doesn't and what you'd like next.</p>
         <div class="cta center">
-          <a class="button" href="{{download}}">Download for macOS</a>
-          <a class="button ghost light" href="/docs/installation/">Installation guide</a>
+          <a class="button only-mac" href="{{download}}">Download for macOS</a>
+          <a class="button only-windows" href="{{downloadWindows}}">Download for Windows (beta)</a>
+          <a class="button not-detected" href="{{download}}">Download for macOS</a>
+          <a class="button not-detected" href="{{downloadWindows}}">Download for Windows (beta)</a>
+          <a class="button ghost light only-mac" href="/docs/installation/">Installation guide</a>
+          <a class="button ghost light only-windows" href="/docs/windows/">Installation guide</a>
+          <a class="button ghost light not-detected" href="/docs/installation/">Installation guide</a>
         </div>
       </div>
     </section>

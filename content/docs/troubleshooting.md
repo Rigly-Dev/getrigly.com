@@ -2,6 +2,8 @@
 title: Troubleshooting
 description: Checks, logs and fixes for when a site doesn't load.
 ---
+Most problems show up in Rigly's checks. On Windows, the checks are Rigly's DNS rule and its trusted certificate, and the rest of this page applies as on the Mac: see [Rigly for Windows](/docs/windows/) for what's different there.
+
 Most problems show up in Rigly's checks. Open **Settings** to see them, or run:
 
 ```sh

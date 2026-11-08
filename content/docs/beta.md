@@ -14,21 +14,20 @@ Rigly is in public beta. It's ready for everyday use, and we use it ourselves, b
 
 ## Send feedback
 
-Bug reports, ideas and questions all go to [Rigly's issue tracker on GitHub](https://github.com/Rigly-Dev/rigly-mac/issues). You need a free GitHub account to post.
+Bug reports, ideas and questions all go to Rigly's issue trackers on GitHub: [Rigly for Mac](https://github.com/Rigly-Dev/rigly-mac/issues) and [Rigly for Windows](https://github.com/Rigly-Dev/rigly-windows/issues). You need a free GitHub account to post.
 
-The quickest way is from Rigly itself: choose **Help › Report a Bug…** (or Suggest a Feature, or Ask a Question) while Rigly's window is open, **Send Feedback (Beta)** in the menu under Rigly's menu bar icon, or click the **Beta** badge in Rigly's window. Rigly opens the form with your Rigly and macOS versions already filled in.
+The quickest way is from Rigly itself: choose **Help › Report a Bug…** (or Suggest a Feature, or Ask a Question) while Rigly's window is open, **Send Feedback (Beta)** in the menu under Rigly's menu bar icon, or click the **Beta** badge in Rigly's window. Rigly opens the form with your Rigly and macOS versions already filled in. On Windows, right-click Rigly's tray icon and choose **Send Feedback (Beta)**, or click the **Beta** badge.
 
-- [Report a bug](https://github.com/Rigly-Dev/rigly-mac/issues/new?template=bug.yml)
-- [Suggest a feature](https://github.com/Rigly-Dev/rigly-mac/issues/new?template=feature.yml)
-- [Ask a question](https://github.com/Rigly-Dev/rigly-mac/issues/new?template=question.yml)
+- Mac: [Report a bug](https://github.com/Rigly-Dev/rigly-mac/issues/new?template=bug.yml) · [Suggest a feature](https://github.com/Rigly-Dev/rigly-mac/issues/new?template=feature.yml) · [Ask a question](https://github.com/Rigly-Dev/rigly-mac/issues/new?template=question.yml)
+- Windows: [Report a bug](https://github.com/Rigly-Dev/rigly-windows/issues/new?template=bug.yml) · [Suggest a feature](https://github.com/Rigly-Dev/rigly-windows/issues/new?template=feature.yml) · [Ask a question](https://github.com/Rigly-Dev/rigly-windows/issues/new?template=question.yml)
 
-Before reporting a bug, have a look at the [open issues](https://github.com/Rigly-Dev/rigly-mac/issues): someone may have reported it already. Add a 👍 to it so we know it affects you too.
+Before reporting a bug, have a look at the open issues ([Mac](https://github.com/Rigly-Dev/rigly-mac/issues), [Windows](https://github.com/Rigly-Dev/rigly-windows/issues)): someone may have reported it already. Add a 👍 to it so we know it affects you too.
 
 ## A good bug report
 
 - What you did, what you expected, and what happened instead.
 - The output of `rigly doctor`, which shows Rigly's checks.
 - Anything relevant from the **Logs** window. Remove anything private first.
-- Other development tools on your Mac, such as Herd, Valet, MAMP or Docker, and whether you use a VPN.
+- Other development tools on your computer, such as Herd, Valet, MAMP or Docker, and whether you use a VPN.
 
 The [troubleshooting guide](/docs/troubleshooting/) solves the most common problems, if you'd like to try first.

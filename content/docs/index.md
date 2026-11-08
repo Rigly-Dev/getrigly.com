@@ -3,7 +3,9 @@ title: Introduction
 nav: Introduction
 description: What Rigly is, what it does, and how to get started.
 ---
-Rigly is a local PHP development environment for macOS. It serves the projects on your Mac at addresses like `shop.test`, with the PHP version, databases and tools each one needs, from a native menu bar app and a `rigly` command.
+Rigly is a local PHP development environment for macOS and Windows. It serves the projects on your computer at addresses like `shop.test`, with the PHP version, databases and tools each one needs, from a native app (in your Mac's menu bar, or your PC's system tray) and a `rigly` command.
+
+These docs describe the Mac. Rigly for Windows, in beta, works the same way; [Rigly for Windows](/docs/windows/) covers the differences.
 
 ## What Rigly does
 
@@ -30,8 +32,7 @@ The menu bar app and the `rigly` command share the same settings, so you can use
 
 ## Requirements
 
-- macOS 15 Sequoia or later
-- A Mac with Apple silicon or an Intel processor
+- macOS 15 Sequoia or later, on a Mac with Apple silicon or an Intel processor; or Windows 10 or 11, 64-bit ([Windows requirements](/docs/windows/#requirements))
 - About 200 MB of disk space for the basics, plus whatever PHP versions and services you add
 
 ## Quick start
@@ -41,4 +42,4 @@ The menu bar app and the `rigly` command share the same settings, so you can use
 3. Click **Park folder** and choose the folder that holds your projects, such as `~/Code`.
 4. Open `http://<project>.test` in your browser.
 
-The [installation guide](/docs/installation/) covers each step in detail.
+The [installation guide](/docs/installation/) covers each step in detail. On Windows, see [Rigly for Windows](/docs/windows/).

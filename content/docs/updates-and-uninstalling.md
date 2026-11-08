@@ -5,6 +5,8 @@ description: How Rigly keeps itself up to date, and how to remove it completely.
 ---
 Rigly checks for updates once a day and installs them for you. To check straight away, choose **Check for Updates…** in Rigly's menu bar menu.
 
+This page covers the Mac. On Windows, see [updates](/docs/windows/#updates) and [uninstalling](/docs/windows/#uninstalling) in Rigly for Windows.
+
 ## Updates
 
 Updates are signed: Rigly only installs an update signed with Rigly's own key, and macOS checks Apple's notarization as well. Your sites, settings, PHP versions and databases are kept.
