@@ -15,7 +15,7 @@ npm run dev        # build, then serve dist/ at http://localhost:8080
 - `public/`: copied as is (styles, brand images, `CNAME`).
 
 Pushing to `main` deploys (`.github/workflows/deploy.yml`). The download link is
-`https://github.com/Rigly-Dev/rigly-releases/releases/latest/download/Rigly.dmg`, which the Rigly-macOS
+`https://github.com/Rigly-Dev/rigly-mac/releases/latest/download/Rigly.dmg`, which the Rigly-Apps
 release workflow publishes with every release.
 
 Keep the docs in step with the app: they describe commands, options, labels and defaults exactly.

@@ -6,7 +6,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } fr
 import { dirname, join } from 'node:path';
 
 const SITE = 'https://getrigly.com';
-const DOWNLOAD = 'https://github.com/Rigly-Dev/rigly-releases/releases/latest/download/Rigly.dmg';
+const DOWNLOAD = 'https://github.com/Rigly-Dev/rigly-mac/releases/latest/download/Rigly.dmg';
 
 // The docs sidebar, in order. Each slug is content/docs/<slug>.md.
 const NAV = [
